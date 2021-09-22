@@ -1,57 +1,40 @@
-# Project Name
+# Azure Function with Cosmos DB for MongoDB API integration
 
-(short, 1-3 sentenced, description of the project)
+In this [tutorial]((https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-install)), create a secure API in Visual Studio Code with VS Code extensions and JavaScript, then deploy the application to the Azure cloud for hosting with a public HTTP endpoint. The API integrates with a Cosmos DB database using the MongoDB API. The MongoDB API is accessed from the mongoose npm package.
 
-## Features
+The MongoDB database functionality includes:
 
-This project framework provides the following features:
+* Add item
+* Delete item by ID
+* Get item by ID
+* Get all items
 
-* Feature 1
-* Feature 2
-* ...
+## Prepare you development environment 
 
-## Getting Started
+Install the following software: 
 
-### Prerequisites
+* Create a free [Azure subscription](https://azure.microsoft.com/free/)
+* Install [Node.js LTS](https://nodejs.org/en/download)
+* Install [Visual Studio Code](https://code.visualstudio.com/) and use the following extensions:
+    * [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
+    * [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+    * [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 
-(ideally very short, if any)
+The following software is installed as part of the tutorial later:
 
-- OS
-- Library version
-- ...
+* [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) - to use Azure Functions 3.x
 
-### Installation
+## Tutorial steps
 
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+1. [Introduction and prerequisites](https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-install)
+2. [Create the local Functions app with the Visual Studio Code Functions extension](https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-create-local)
+3. [Run the function locally](https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-test-local)
+4. [Deploy the Functions app to Azure cloud](https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-deploy-hosting)
+5. [MongoDB integration](https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-database-integration)
+6. [Clean up resources](https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-remove-resource)
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+* [Azure for JavaScript developers](https://docs.microsoft.com/azure/developer/javascript/)
+* [Azure Functions](https://docs.microsoft.com/azure/azure-functions/)
+* [Azure Cosmos DB for MongoDB API](https://docs.microsoft.com/azure/cosmos-db/mongodb/mongodb-introduction)
