@@ -1,20 +1,15 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions";
 import * as db from "../lib/azure-cosmosdb-mongodb";
 
-db.init()
-  .then((results) => {
-    console.log("db connected");
-  })
-  .catch((err) => {
-    console.log(`db NOT connected - ${JSON.stringify(err)}`);
-  });
-
 const httpTrigger: AzureFunction = async function (
   context: Context,
   req: HttpRequest
 ): Promise<void> {
   try {
     let response = null;
+
+    // create 1 db connection for all functions
+    await db.init();
 
     switch (req.method) {
       case "GET":
