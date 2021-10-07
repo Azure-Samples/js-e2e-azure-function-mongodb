@@ -1,5 +1,7 @@
 import { Schema, model, connect } from "mongoose";
 
+let db=null;
+
 const CategorySchema = new Schema(
   { categoryName: String },
   { timestamps: true }
@@ -7,7 +9,9 @@ const CategorySchema = new Schema(
 const CategoryModel = model("Category", CategorySchema, "Bookstore");
 
 export const init = async () => {
-  await connect(process.env["CosmosDbConnectionString"]);
+  if(!db) {
+    db = await connect(process.env["CosmosDbConnectionString"]);
+  }
 };
 export const addItem = async (doc) => {
   const modelToInsert = new CategoryModel();
