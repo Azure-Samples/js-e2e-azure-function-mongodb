@@ -26,7 +26,7 @@ The following software is installed as part of the tutorial later:
 
 ## Use the dev container or CodeSpaces
 
-1. Use the following linke to create your [Azure CosmosDB for MongoDB API in the Azure portal](https://ms.portal.azure.com/#create/Microsoft.DocumentDB). 
+1. Use the following link to create your [Azure CosmosDB for MongoDB API in the Azure portal](https://ms.portal.azure.com/#create/Microsoft.DocumentDB). 
 1. Open the project in a Visual Studio Code Dev Container or GitHub Codespace.
 1. Copy the connection string into the `./local.settings.json` file for the `CosmosDbConnectionString` property.
 1. Run the project or debug the project. 
