@@ -21,7 +21,8 @@
 		"dbaeumer.vscode-eslint",
 		"ms-azuretools.vscode-azurefunctions",
 		"ms-vscode.azure-account",
-		"ms-azuretools.vscode-cosmosdb"
+		"ms-azuretools.vscode-cosmosdb",
+		"ms-azuretools.vscode-azureresourcegroups"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
