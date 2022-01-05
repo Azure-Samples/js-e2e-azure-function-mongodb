@@ -21,21 +21,21 @@ curl -X DELETE http://localhost:7071/api/category \
    
 # remote function API   
    
-curl -X POST http://YOUR-FUNCTION-RESOURCE-NAME.azurewebsites.net/api/category?code=YOUR-FUNCTION-KEY \
+curl -X POST YOUR-FUNCTION-URL \
    -H 'Content-Type: application/json' \
    -d '{"document":{"name":"John"}}' --verbose
 
-curl -X POST http://YOUR-FUNCTION-RESOURCE-NAME.azurewebsites.net/api/category?code=YOUR-FUNCTION-KEY \
+curl -X POST YOUR-FUNCTION-URL \
    -H 'Content-Type: application/json' \
    -d '{"document":{"name":"Sally"}}' --verbose
 
-curl -X GET http://YOUR-FUNCTION-RESOURCE-NAME.azurewebsites.net/api/category?code=YOUR-FUNCTION-KEY \
+curl -X GET YOUR-FUNCTION-URL \
    -H 'Content-Type: application/json' --verbose
 
-curl -X GET http://YOUR-FUNCTION-RESOURCE-NAME.azurewebsites.net/api/category?code=YOUR-FUNCTION-KEY \
+curl -X GET YOUR-FUNCTION-URL \
    -H 'Content-Type: application/json' \
    -d '{"id":"DOCUMENT_ID"}' --verbose
 
-curl -X DELETE http://YOUR-FUNCTION-RESOURCE-NAME.azurewebsites.net/api/category?code=YOUR-FUNCTION-KEY \
+curl -X DELETE YOUR-FUNCTION-URL \
    -H 'Content-Type: application/json' \
    -d '{"id":"DOCUMENT_ID"}' --verbose
