@@ -1,4 +1,6 @@
-# Azure Function with Cosmos DB for MongoDB API integration
+# ARCHIVED: Azure Function with Cosmos DB for MongoDB API integration
+
+This source code has been moved to [Azure-Samples/azure-typescript-e2e-apps](https://github.com/Azure-Samples/azure-typescript-e2e-apps)
 
 In this [tutorial]((https://docs.microsoft.com/azure/developer/javascript/tutorial/vscode-function-app-http-trigger/tutorial-vscode-serverless-node-install)), create a secure API in Visual Studio Code with VS Code extensions and JavaScript, then deploy the application to the Azure cloud for hosting with a public HTTP endpoint. The API integrates with a Cosmos DB database using the MongoDB API. The MongoDB API is accessed from the mongoose npm package.
 
